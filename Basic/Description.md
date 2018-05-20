@@ -1,5 +1,5 @@
-# The programs listed here are basic programs written in ruby.
-# These are AlienSjit's solutions of the activities on The Odin Project basic ruby course.
+# Basic Ruby
+# by AlienSjit
 
 List of programs:
 [angry_boss]() - Prints an angry reply from your boss no matter what you say.
