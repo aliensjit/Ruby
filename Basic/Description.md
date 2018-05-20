@@ -1,5 +1,4 @@
-# Basic Ruby
-# by AlienSjit
+# Basic Ruby by Alien Sjit
 
 List of programs:
 [angry_boss]() - Prints an angry reply from your boss no matter what you say.
