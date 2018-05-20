@@ -1,3 +1,5 @@
+gran_reply = 'NO, NOT SINCE ' + rand(1929..1951).to_s
+
 puts 'You walk in the room and see your Grandma.'
 greeting = gets.chomp
 
@@ -5,7 +7,7 @@ while greeting != greeting.upcase
 	puts 'HUH!? SPEAK UP SONNY!'
 	greeting = gets.chomp
 end
-	puts 'NO, NOT SINCE ' + rand(1929..1951).to_s + '!'
+	puts gran_reply + '!'
 # End of first input
 
 greeting1 = gets.chomp
@@ -15,7 +17,7 @@ while greeting1 != greeting1.upcase
 	greeting1 = gets.chomp
 end
 	while greeting1 != 'BYE'
-		puts 'NO, NOT SINCE ' + rand(1929..1951).to_s + '!!'
+		puts gran_reply + '!!'
 		greeting1 = gets.chomp
 	end
 		puts 'DID YOU SAY SOMETHING?'
@@ -28,7 +30,7 @@ while greeting2 != greeting2.upcase
 	greeting2 = gets.chomp
 end
 	while greeting2 != 'BYE!'
-		puts 'NO, NOT SINCE ' + rand(1929..1951).to_s + '!!!'
+		puts gran_reply + '!!!'
 		greeting2 = gets.chomp
 	end
 		puts '...'
@@ -41,7 +43,7 @@ while greeting3 != greeting3.upcase
 	greeting3 = gets.chomp
 end
 	while greeting3 != 'BYE!!'
-		puts 'NO, NOT SINCE ' + rand(1929..1951).to_s + '!!!!'
+		puts gran_reply + '!!!!'
 		greeting3 = gets.chomp
 	end
 		puts 'ALRIGHT, SEE YOU!'
