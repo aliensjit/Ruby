@@ -1,50 +1,53 @@
-gran_reply = 'NO, NOT SINCE ' + rand(1929..1951).to_s
+reply1 = 'NO, NOT SINCE ' + rand(1929..1951).to_s + '!'
+reply2 = 'HUH!? SPEAK UP, SONNY!'
+greeting1 = ''
+greeting2 = ''
+greeting3 = ''
 
-puts 'You walk in the room and see your Grandma.'
-greeting = gets.chomp
+while greeting1 != 'BYE' || greeting2 != 'BYE' || greeting3 != 'BYE'
 
-while greeting != greeting.upcase
-	puts 'HUH!? SPEAK UP SONNY!'
-	greeting = gets.chomp
-end
-	puts gran_reply + '!'
-# End of first input
-
-greeting1 = gets.chomp
-
-while greeting1 != greeting1.upcase
-	puts 'WHAT!? SPEAK UP SONNY!'
-	greeting1 = gets.chomp
-end
 	while greeting1 != 'BYE'
-		puts gran_reply + '!!'
 		greeting1 = gets.chomp
+
+		if greeting1 == greeting1.upcase
+			puts reply1
+		else 
+			puts reply2
+		end
+
+		if greeting1 != 'BYE'
+			greeting2 = ''
+			greeting3 = ''
+		end
 	end
-		puts 'DID YOU SAY SOMETHING?'
-# End of second input
 
-greeting2 = gets.chomp
-
-while greeting2 != greeting2.upcase
-	puts 'HUH!?!? SPEAK UP!'
-	greeting2 = gets.chomp
-end
-	while greeting2 != 'BYE!'
-		puts gran_reply + '!!!'
+	while greeting2 != 'BYE'
 		greeting2 = gets.chomp
-	end
-		puts '...'
-#End of third input
 
-greeting3 = gets.chomp
+		if greeting2 == greeting2.upcase
+			puts reply1
+		else 
+			puts reply2
+		end
 
-while greeting3 != greeting3.upcase
-	puts 'WHAT? OPEN YOUR MOUTH!'
-	greeting3 = gets.chomp
-end
-	while greeting3 != 'BYE!!'
-		puts gran_reply + '!!!!'
+		if greeting2 != 'BYE'
+			greeting1 = ''
+			greeting3 = ''
+		end
+	end	
+
+	while greeting3 != 'BYE'
 		greeting3 = gets.chomp
-	end
-		puts 'ALRIGHT, SEE YOU!'
 
+		if greeting3 == greeting3.upcase
+			puts reply1
+		else 
+			puts reply2
+		end
+
+		if greeting3 != 'BYE'
+			greeting1 = ''
+			greeting2 = ''
+		end
+	end
+end
